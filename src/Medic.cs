@@ -90,7 +90,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
         {
             if (!AdminManager.PlayerHasPermissions(activator, Config.AccessFlag))
             {
-                activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}Have not access for to use this command.");
+                activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}You don't have access to use this command.");
                 if(Config.HealFailureSound != "")
                     activator.ExecuteClientCommand($"play {Config.HealFailureSound}");
                 return;
@@ -99,7 +99,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
 
         if (_tries[activator.SteamID] <= 0)
         {
-            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}The limit has been reached. Total: {ChatColors.Red}{Config.MaxUse}");
+            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}Limit has been reached. Total: {ChatColors.Red}{Config.MaxUse}.");
             if(Config.HealFailureSound != "")
                 activator.ExecuteClientCommand($"play {Config.HealFailureSound}");
             return;
@@ -107,7 +107,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
 
         if (activator.InGameMoneyServices!.Account < Config.Cost)
         {
-            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}Not enough money to use medic. Need: {ChatColors.Red}{Config.Cost}$");
+            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}Not enough money to use medic. Need: {ChatColors.Red}{Config.Cost}$.");
             if(Config.HealFailureSound != "")
                 activator.ExecuteClientCommand($"play {Config.HealFailureSound}");
             return;
@@ -115,7 +115,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
 
         if (activator.PlayerPawn.Value != null && activator.PlayerPawn.Value.Health > Config.MinHealth)
         {
-            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}Too much health for to use medic. Need: {ChatColors.Red}{Config.MinHealth}hp or less");
+            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}You need {ChatColors.Red}{Config.MinHealth}HP or less to use medic.");
             if(Config.HealFailureSound != "")
                 activator.ExecuteClientCommand($"play {Config.HealFailureSound}");
             return;
@@ -123,7 +123,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
         
         if (activator.PlayerPawn.Value != null && activator.PlayerPawn.Value.Health == activator.PlayerPawn.Value.MaxHealth)
         {
-            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}You are have full hp already");
+            activator.PrintToChat($" {ChatColors.Red}[Medic] {ChatColors.Default}You have full HP already.");
             if(Config.HealFailureSound != "")
                 activator.ExecuteClientCommand($"play {Config.HealFailureSound}");
             return;
@@ -141,7 +141,7 @@ private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
         _tries[activator.SteamID]--;
 		
         if (Config.ShowCall)
-            Server.PrintToChatAll($" {ChatColors.Red}[Medic] {ChatColors.Default}Player {ChatColors.Green}{activator.PlayerName}{ChatColors.Default} used medic and restore {ChatColors.Red}{total}hp");
+            Server.PrintToChatAll($" {ChatColors.Red}[Medic] {ChatColors.Default}Player {ChatColors.Green}{activator.PlayerName}{ChatColors.Default} used medic({ChatColors.Red}+{total} HP{ChatColors.Default}).");
         
         if(Config.HealSuccessSound != "")
             activator.ExecuteClientCommand($"play {Config.HealSuccessSound}");
