@@ -1,9 +1,13 @@
+C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\bin\Release\net8.0\medic.deps.json
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\bin\Release\net8.0\medic.dll
+C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\bin\Release\net8.0\medic.pdb
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.csproj.AssemblyReference.cache
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.AssemblyInfoInputs.cache
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.AssemblyInfo.cs
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.csproj.CoreCompileInputs.cache
+C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.sourcelink.json
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.dll
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\refint\medic.dll
+C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\medic.pdb
 C:\Users\MihaiGsm2003\Desktop\CS2\CSS\Medic\src\obj\Release\net8.0\ref\medic.dll

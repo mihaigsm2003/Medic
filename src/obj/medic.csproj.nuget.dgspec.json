@@ -39,10 +39,8 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "CounterStrikeSharp.API": {
-              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "None",
               "target": "Package",
-              "version": "[1.0.215, )"
+              "version": "[1.0.225, )"
             }
           },
           "imports": [

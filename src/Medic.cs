@@ -51,7 +51,7 @@ public class Medic : BasePlugin, IPluginConfig<ConfigGen>
 private HookResult OnPlayerSpawn(EventPlayerSpawn @event, GameEventInfo info)
     {
         var player = @event.Userid;
-        if(!player.IsValid || player.IsBot)
+        if(player == null || player.IsBot)
             return HookResult.Continue;
         
         if (!_tries.ContainsKey(player.SteamID))

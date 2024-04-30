@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8EWpvGzcgbZitY+kQI+SgvKFD6WB9I6VAcnsWNkRxpsybX2tBFhf51FVKnvclmTjII3xlj13ljmQWoVOa1xt1Q==",
+  "dgSpecHash": "puTvsuMgF7/yuZ24p2rQCyODR9+oV0Syb+oWS1PAvrp5bBqzfM0iJWzr52Y4seZbfiX0e+DyPxX/gYZ7uN2wKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\MihaiGsm2003\\Desktop\\CS2\\CSS\\Medic\\src\\medic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MihaiGsm2003\\.nuget\\packages\\counterstrikesharp.api\\1.0.215\\counterstrikesharp.api.1.0.215.nupkg.sha512",
+    "C:\\Users\\MihaiGsm2003\\.nuget\\packages\\counterstrikesharp.api\\1.0.225\\counterstrikesharp.api.1.0.225.nupkg.sha512",
     "C:\\Users\\MihaiGsm2003\\.nuget\\packages\\mcmaster.netcore.plugins\\1.4.0\\mcmaster.netcore.plugins.1.4.0.nupkg.sha512",
     "C:\\Users\\MihaiGsm2003\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\MihaiGsm2003\\.nuget\\packages\\microsoft.dotnet.apicompat.task\\8.0.203\\microsoft.dotnet.apicompat.task.8.0.203.nupkg.sha512",
